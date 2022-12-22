@@ -17,10 +17,10 @@ dependencies:
 
   flutter_native_splash: ^2.2.16
 
-flutter_native_splash:        # 追加
-  image: "assets/images/icon.pngicon.png"  # 追加
-  color: "#3B3B3B"            # 追加
-  fullscreen: true            # 追加
+flutter_native_splash: # スプラッシュ画面
+  image: "assets/images/icon.pngicon.png"
+  color: "#3B3B3B"
+  fullscreen: true
 
 dev_dependencies:
   flutter_test:
@@ -28,7 +28,8 @@ dev_dependencies:
 
   flutter_launcher_icons: "^0.11.0"
 
-flutter_icons:
+
+flutter_icons: # 初期アイコンの変更
   android: true
   ios: true
   image_path: "assets/images/icon.png"

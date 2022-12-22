@@ -14,18 +14,18 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       debugShowCheckedModeBanner: false,
-      home: const CLIP(),
+      home: HomePage(),
     );
   }
 }
 
-class CLIP extends StatelessWidget {
-  const CLIP({super.key});
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-        return Container();
+    
+    return Container();
   }
 }
-
 
