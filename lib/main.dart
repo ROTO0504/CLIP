@@ -6,26 +6,19 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+      title: 'Welcome to Flutter',
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Welcome to Flutter'),
+        ),
+        body: const Center(
+          child: Text('Hello World'),
+        ),
       ),
-      debugShowCheckedModeBanner: false,
-      home: HomePage(),
     );
   }
 }
-
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    
-    return Container();
-  }
-}
-
