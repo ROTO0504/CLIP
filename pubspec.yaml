@@ -41,3 +41,5 @@ flutter_icons: # 初期アイコンの変更
 
 flutter:
   uses-material-design: true
+  assets:
+  - assets/images/
