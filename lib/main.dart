@@ -1,3 +1,5 @@
+import 'package:clip/view/components/navbar.dart';
+import 'package:clip/view/home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,13 +12,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Welcome to Flutter',
+      debugShowCheckedModeBanner: false, //バナーの消去
+      title: 'CLIP',
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Welcome to Flutter'),
         ),
         body: const Center(
-          child: Text('Hello World'),
+          child: Navbar(),
         ),
       ),
     );
