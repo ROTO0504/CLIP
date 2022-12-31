@@ -1,5 +1,5 @@
-import 'package:clip/view/components/navbar.dart';
-import 'package:clip/view/home.dart';
+import 'package:clip/view/components/fab_add.dart';
+import 'package:clip/view/routes/home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -18,9 +18,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Welcome to Flutter'),
         ),
-        body: const Center(
-          child: Navbar(),
-        ),
+        body: const Center(child: Fav_add()),
       ),
     );
   }
