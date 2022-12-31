@@ -38,6 +38,12 @@ class _BottomNavbarState extends State<BottomNavbar> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: _pages[_selectIndex],
+      appBar: AppBar(
+        title: Text("あけおめ！！！！"),
+        actions: <Widget>[
+          IconButton(onPressed: () => {}, icon: Icon(Icons.settings))
+        ],
+      ),
       bottomNavigationBar: BottomNavigationBar(
         items: [
           BottomNavigationBarItem(

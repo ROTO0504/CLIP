@@ -1,6 +1,7 @@
 import 'package:clip/view/components/fab_add.dart';
 import 'package:clip/view/routes/home.dart';
 import 'package:flutter/material.dart';
+import 'package:clip/view/components/bottomNavbar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,12 +17,7 @@ class MyApp extends StatelessWidget {
       darkTheme: ThemeData.dark(),
       debugShowCheckedModeBanner: false, //バナーの消去
       title: 'CLIP',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Welcome to Flutter'),
-        ),
-        body: const Center(child: Fav_add()),
-      ),
+      home: BottomNavbar(),
     );
   }
 }
