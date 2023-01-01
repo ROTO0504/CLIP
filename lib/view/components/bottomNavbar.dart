@@ -15,17 +15,17 @@ class _BottomNavbarState extends State<BottomNavbar> {
 
   var _pages = <Widget>[
     Container(
-      child: LibScreen(),
+      child: HomeScreen(),
       alignment: Alignment.center,
     ),
     Container(
-      child: HomeScreen(),
+      child: LibScreen(),
       alignment: Alignment.center,
     ),
     Container(
       child: SettingsScreen(),
       alignment: Alignment.center,
-    ),
+    )
   ];
 
   void _onTapItem(int index) {
@@ -38,8 +38,10 @@ class _BottomNavbarState extends State<BottomNavbar> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: _pages[_selectIndex],
+      extendBodyBehindAppBar: true,
       appBar: AppBar(
-        title: Text("あけおめ！！！！"),
+        backgroundColor: Colors.black.withOpacity(0.1),
+        title: Text("home"),
         actions: <Widget>[
           IconButton(onPressed: () => {}, icon: Icon(Icons.settings))
         ],
@@ -47,16 +49,12 @@ class _BottomNavbarState extends State<BottomNavbar> {
       bottomNavigationBar: BottomNavigationBar(
         items: [
           BottomNavigationBarItem(
-            icon: Icon(Icons.settings),
-            label: 'Settings',
-          ),
-          BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.favorite),
-            label: 'Favorite',
+            icon: Icon(Icons.menu),
+            label: 'Library',
           ),
         ],
         currentIndex: _selectIndex,
