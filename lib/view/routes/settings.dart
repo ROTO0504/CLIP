@@ -8,9 +8,10 @@ class SettingsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      color: Color.fromARGB(255, 209, 196, 18),
-      child: Text('settings'),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("設定"),
+      ),
     );
   }
 }

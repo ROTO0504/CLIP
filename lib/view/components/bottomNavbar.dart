@@ -37,16 +37,29 @@ class _BottomNavbarState extends State<BottomNavbar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(onPressed: null),
       body: _pages[_selectIndex],
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        backgroundColor: Colors.black.withOpacity(0.1),
-        title: Text("home"),
+        shape: const StadiumBorder(),
+        backgroundColor: Colors.black.withOpacity(0.2),
+        title: Text("粋なコメント"),
         actions: <Widget>[
-          IconButton(onPressed: () => {}, icon: Icon(Icons.settings))
+          IconButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => SettingsScreen(),
+                    fullscreenDialog: true,
+                  ),
+                );
+              },
+              icon: Icon(Icons.settings))
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Color(212121),
         items: [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
