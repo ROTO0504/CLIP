@@ -29,15 +29,10 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  flutter_launcher_icons: "^0.11.0" #icon
 
 
 
 
-flutter_icons: # 初期アイコンの変更
-  android: true
-  ios: true
-  image_path: "assets/images/icon.png"
 
 flutter:
   uses-material-design: true
