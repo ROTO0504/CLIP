@@ -3,8 +3,8 @@ import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'bottomNavbar.dart';
 
-class Fav_add extends StatelessWidget {
-  const Fav_add({super.key});
+class Fab_add extends StatelessWidget {
+  const Fab_add({super.key});
 
   @override
   Widget build(BuildContext context) {
