@@ -49,8 +49,8 @@ class _BottomNavbarState extends State<BottomNavbar> {
           body: _pages[_selectIndex],
           extendBodyBehindAppBar: true,
           appBar: AppBar(
-            backgroundColor: Colors.black.withOpacity(0.2),
-            title: Text("粋なコメント"),
+            backgroundColor: Colors.black.withOpacity(0.9),
+            title: Text("CLIP"),
             actions: <Widget>[
               IconButton(
                   onPressed: () {
