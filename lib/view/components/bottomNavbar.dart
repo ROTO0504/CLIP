@@ -49,7 +49,7 @@ class _BottomNavbarState extends State<BottomNavbar> {
           body: _pages[_selectIndex],
           extendBodyBehindAppBar: true,
           appBar: AppBar(
-            backgroundColor: Colors.black.withOpacity(0.9),
+            backgroundColor: Colors.black.withOpacity(0.3),
             title: Text("CLIP"),
             actions: <Widget>[
               IconButton(

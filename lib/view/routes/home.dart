@@ -10,19 +10,9 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-        child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: <Widget>[
-          Container(
-            child: Movie_card(),
-          ),
-          Container(
-            child: Movie_card(),
-          ),
-          Container(
-            child: Movie_card(),
-          ),
-        ]));
+    return Scaffold(
+        body: SafeArea(
+      child: Movie_card(),
+    ));
   }
 }

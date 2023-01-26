@@ -8,32 +8,37 @@ class Movie_card extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return CarouselSlider(
-      items: [
-        //カルーセル表示するカード
-        SizedBox(
-            width: 500,
-            height: 100,
-            child: Card(
-              child: Center(child: Text('Card2')),
-              color: Colors.blue,
-            )),
-        SizedBox(
-            width: 500,
-            height: 100,
-            child: Card(
-              child: Center(child: Text('Card2')),
-              color: Colors.red,
-            ))
-      ],
-      options: CarouselOptions(
-        initialPage: 0,
-        enableInfiniteScroll: true,
-        autoPlay: true,
-        autoPlayInterval: Duration(seconds: 20),
-        autoPlayAnimationDuration: Duration(seconds: 1),
-        enlargeCenterPage: true,
-      ),
+    return Scaffold(
+      body: SafeArea(
+          child: Center(
+              child: ListView(
+        children: <Widget>[
+          Column(children: [
+            CarouselSlider(
+              items: [
+                //カルーセル表示するカード
+                SizedBox(
+                    child: Card(
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20)),
+                  child: Center(
+                    child: Text("aaaa"),
+                  ),
+                ))
+              ],
+              options: CarouselOptions(
+                  initialPage: 0,
+                  height: 400,
+                  viewportFraction: 0.5,
+                  enableInfiniteScroll: true,
+                  autoPlay: true,
+                  autoPlayAnimationDuration: Duration(seconds: 1),
+                  enlargeCenterPage: true,
+                  autoPlayCurve: Curves.easeOutCubic),
+            ),
+          ])
+        ],
+      ))),
     );
   }
 }
